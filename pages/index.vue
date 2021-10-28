@@ -1,5 +1,6 @@
 <template>
 <div>
+  <Navbar/>
   <Introduction/>
   <LargeCard 
     v-for="largeCard in largeCardInfo" 
@@ -19,16 +20,15 @@
 import Introduction from '~/components/Introduction.vue'
 import LargeCard from '~/components/LargeCard.vue'
 import SmallCard from '~/components/SmallCard.vue'
+import Navbar from '~/components/Navbar.vue'
 import {largeCardSections,smallCardSections} from '~/assets/data.js'
 export default {
   data(){
     return{
       largeCardInfo:largeCardSections,
-      smallCardInfo:smallCardSections
+      smallCardInfo:smallCardSections,
     }
   }
 }
-// console.log(largeCardSections)
-</script>
 
-Introduction
+</script>
